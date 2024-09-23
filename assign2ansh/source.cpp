@@ -15,6 +15,12 @@ struct STUDENT_DATA {
 
 int main() {
 
+#ifdef PRE_RELEASE
+	cout << "Running in Pre-Release mode." << endl;
+#else
+	cout << "Running in Standard mode." << endl;
+#endif
+
 	//opening and reading the file having student names first and last name.
 	ifstream file("..\\StudentData.txt");
 	//making the vector of type STUDENT_DATA to store the student details.

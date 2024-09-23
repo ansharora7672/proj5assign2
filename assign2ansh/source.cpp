@@ -26,11 +26,7 @@ int main() {
 	}
 
 	file.close();
-	for (int i = 0; i < student_data.size(); ++i)
-	{
-		cout << "First Name: " << student_data[i].firstname << ", Last Name: " << student_data[i].lastname << endl;
-	}
-
+	
 	return 1;
 
 }
